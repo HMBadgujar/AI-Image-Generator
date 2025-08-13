@@ -18,11 +18,13 @@ Image History: (Optional Feature Idea) View and re-download previously generated
 
 # Frontend:
 
-React - A JavaScript library for building user interfaces.
+1. React - A JavaScript library for building user interfaces.
 
-HTML5
+2. HTML5
 
-CSS3
+3. CSS3
+
+5. JavaScript
 
 # Backend API:
 
