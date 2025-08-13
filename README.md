@@ -16,7 +16,7 @@ Image History: (Optional Feature Idea) View and re-download previously generated
 
 ## 🛠️ Tech Stack
 
-# Frontend:
+### Frontend:
 
 1. React - A JavaScript library for building user interfaces.
 
@@ -26,7 +26,7 @@ Image History: (Optional Feature Idea) View and re-download previously generated
 
 5. JavaScript
 
-# Backend API:
+### Backend API:
 
 ClipDrop API - For the text-to-image generation.
 
@@ -63,7 +63,7 @@ Node.js installed on your machine.
 
 2. If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 
-# Fork the Project
+### Fork the Project
 
 1. Create your Feature Branch (git checkout -b feature/AmazingFeature)
 
@@ -73,8 +73,10 @@ Node.js installed on your machine.
 
 4. Open a Pull Request
 
-📜 License
+## 📜 License
+
 Distributed under the MIT License. See LICENSE for more information.
 
-🙏 Acknowledgements
+## 🙏 Acknowledgements
+
 ClipDrop for the incredible API.
