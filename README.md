@@ -4,15 +4,13 @@ An innovative web application that transforms your textual descriptions into stu
 
 ## ✨ Features
 
-Text-to-Image Conversion: Simply type a description, and our AI will generate a unique image for you.
+1. Text-to-Image Conversion: Simply type a description, and our AI will generate a unique image for you.
 
-User-Friendly Interface: A clean and modern UI built with React for a smooth user experience.
+2. User-Friendly Interface: A clean and modern UI built with React for a smooth user experience.
 
-High-Quality Images: Powered by the state-of-the-art ClipDrop API for impressive results.
+3. High-Quality Images: Powered by the state-of-the-art ClipDrop API for impressive results.
 
-Responsive Design: Looks great on desktops, tablets, and mobile devices.
-
-Image History: (Optional Feature Idea) View and re-download previously generated images.
+4. Responsive Design: Looks great on desktops, tablets, and mobile devices.
 
 ## 🛠️ Tech Stack
 
