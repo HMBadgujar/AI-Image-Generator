@@ -12,27 +12,37 @@ const ImageGenerator = () => {
       return;
     }
     setLoading(true);
-    const response= await fetch(
-      "https://clipdrop-api.co/text-to-image/v1",
-      {
-        method: "POST",
-        headers:{
-          "Content-Type":"application/json",
-          Authorisation:
-          "94d9883dc1f9f4ab21dcab86972e2f89abe80edfbdcfbc30ffa446aa3262b5ac3de04436a8dd33f1bb8c9a92e2f4704e",
-          "User-Agent":"Chrome",
-        },
-        body:JSON.stringify({
-          prompt: '${inputRef.current.value}',
-          n:1,
-          size:"512x400",
-        }),
+    const formData = new FormData();
+    formData.append('prompt', `${inputRef.current.value}`);
+      const response = await fetch(
+        "https://clipdrop-api.co/text-to-image/v1",
+        {
+          method: "POST",
+          headers: {
+            'x-api-key': '94d9883dc1f9f4ab21dcab86972e2f89abe80edfbdcfbc30ffa446aa3262b5ac3de04436a8dd33f1bb8c9a92e2f4704e', // Use your API key
+          },
+          body: formData,
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
       }
-    );
-    let data= await response.json();
-    let data_array = data.data;
-    setImageUrl(data_array[0].url);
-    setLoading(false);
+
+      // CORRECT WAY: Read the response as a blob (the image file)
+      const imageBlob = await response.blob();
+
+      // Create a temporary URL from the image data
+      const imageUrl = URL.createObjectURL(imageBlob);
+
+      // Set this temporary URL as the image source
+
+      
+      setImageUrl(imageUrl);
+      setLoading(false);
+
+    
+    
   }
   return (
     <div>
