@@ -22,7 +22,9 @@ An innovative web application that transforms your textual descriptions into stu
 
 3. CSS3
 
-5. JavaScript
+4. JavaScript
+
+5. Bootstrap
 
 ### Backend API:
 
